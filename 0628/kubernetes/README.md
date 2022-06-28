@@ -72,7 +72,7 @@ docker pull busybox
 kubectl create secret generic regcred  --from-file=.dockerconfigjson=$HOME/.docker/config.json  --type=kubernetes.io/dockerconfigjson
 ```
 
-pod.yaml 수정
+### pod.yaml 수정
 ```bash
 apiVersion: v1
 kind: Pod
@@ -86,8 +86,15 @@ spec:
   imagePullSecrets:
     - name: regcred
 ```
-
+### yaml file 적용
 ```bash
 kubectl apply -f pod.yaml
 ```
+### pod 확인
+```bash
+kubectl get pod
+```
+### result
+NAME      READY   STATUS    RESTARTS   AGE  
+counter   1/1     Running   0          100s
 
