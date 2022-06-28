@@ -1,6 +1,6 @@
 # FLY-AI
 
-0628
+#0628
 nginx: 가벼운 web server
 docker에 올려서 사용
 
@@ -53,3 +53,4 @@ docker tag my-image:v1.0.0 yunoi/my-image:v1.0.0  # tag
 docker push yunoi/my-image:v1.0.0  # hub.docker.com cloud상에 push
 
 
+##Kubernetes
