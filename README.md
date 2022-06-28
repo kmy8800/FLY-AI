@@ -29,3 +29,27 @@ esc(exit INSERT MODE)
 
 확인 시
 cat Dockerfile
+
+docker 말기
+docker build -t my-image:v1.0.0 .
+
+docker images | grep my
+docker run my-image:v1.0.0
+
+docker run -d -p 5000:5000 --name registry registry    # -d: background에서도 계속 run / -p: publish a container's port to the host, port number
+
+docker tag my-image:v1.0.0 localhost:5000/my-image:v1.0.0
+
+REPOSITORY localhost:5000/my-image와 my-image는 IMAGE ID가 같다.
+
+docker push localhost:5000/my-image:v1.0.0
+
+push 하면 registry 안에 쌓인다.
+
+curl -X GET http://localhost:5000/v2/_catalog  # registry 안에 뭐가 있나
+curl -X GET http://localhost:5000/v2/my-image/tags/list  # Docker image 정보
+
+docker tag my-image:v1.0.0 yunoi/my-image:v1.0.0  # tag
+docker push yunoi/my-image:v1.0.0  # hub.docker.com cloud상에 push
+
+
