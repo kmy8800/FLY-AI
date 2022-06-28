@@ -29,14 +29,14 @@ kubectl get pod -n kube-system
 ```
 
 #### result
-NAME                               READY   STATUS    RESTARTS   AGE
-coredns-558bd4d5db-2wvtq           1/1     Running   0          8m11s
-etcd-minikube                      1/1     Running   0          8m18s
-kube-apiserver-minikube            1/1     Running   0          8m18s
-kube-controller-manager-minikube   1/1     Running   0          8m18s
-kube-proxy-4svhr                   1/1     Running   0          8m11s
-kube-scheduler-minikube            1/1     Running   0          8m18s
-storage-provisioner                1/1     Running   1          8m23s
+NAME                               READY   STATUS    RESTARTS   AGE  
+coredns-558bd4d5db-2wvtq           1/1     Running   0          8m11s  
+etcd-minikube                      1/1     Running   0          8m18s  
+kube-apiserver-minikube            1/1     Running   0          8m18s  
+kube-controller-manager-minikube   1/1     Running   0          8m18s  
+kube-proxy-4svhr                   1/1     Running   0          8m11s  
+kube-scheduler-minikube            1/1     Running   0          8m18s  
+storage-provisioner                1/1     Running   1          8m23s  
 
 
 Kubernetes에 올라가는 pod, container 등에 대한 정보를 yaml파일로 작성
