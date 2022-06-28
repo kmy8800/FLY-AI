@@ -98,3 +98,13 @@ kubectl get pod
 NAME      READY   STATUS    RESTARTS   AGE  
 counter   1/1     Running   0          100s
 
+-------------------------
+### pod에 interactive 모드로 접속(?)
+```bash
+kubectl exec -it counter /bin/bash
+```
+
+### pod 삭제 명령어
+```bash
+kubectl delete pod counter
+```
