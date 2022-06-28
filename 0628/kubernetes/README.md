@@ -28,7 +28,7 @@ minikube start --driver=docker
 kubectl get pod -n kube-system
 ```
 
-#### result
+### result
 NAME                               READY   STATUS    RESTARTS   AGE  
 coredns-558bd4d5db-2wvtq           1/1     Running   0          8m11s  
 etcd-minikube                      1/1     Running   0          8m18s  
@@ -41,7 +41,7 @@ storage-provisioner                1/1     Running   1          8m23s
 
 Kubernetes에 올라가는 pod, container 등에 대한 정보를 yaml파일로 작성
 
-##### pod.yaml
+### pod.yaml
 
 ```bash
 apiVersion: v1 # kubernetes resource 의 API Version
@@ -59,10 +59,10 @@ spec: # 메인 파트 : resource 의 desired state 를 명시
 kubectl apply -f pod.yaml
 ```
 
-ImagePullBackoff Error 발생
-: Image busybox를 찾을 수 없어 에러 발생
+**ImagePullBackoff Error 발생**
+: Image busybox를 찾을 수 없어 에러 발생, ip가 몰려 docker pull에 제한사항으로 인해 image를 가져오지 못함
 
-##### 해결방법
+### 해결방법
 docker login & login정보를 kubectl에 저장
 ```bash
 docker login
