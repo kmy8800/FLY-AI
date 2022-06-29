@@ -64,6 +64,8 @@ kubectl scale deployment/nginx-deployment --replicas=5
 
 ```bash
 kubectl delete deployment <deployment name>
+
 또는
+
 kubectl delete -f <yaml file>
 ```
