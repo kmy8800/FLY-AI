@@ -4,13 +4,13 @@
 
 ### 1. Deployment(배포)
 
-Pod와 Replicaset에 대한 "관리"를 제공하는 단위  
-  관리: Self-healing, Scaling, Rollout(무중단 업데이트) 등  
-    Self-healing: container가 잘 작동하는지 ping을 통해 확인  
-    Scale out: component 수를 늘림(웹 서버)  
-    Scale up: component 용량을 늘림(데이터베이스)  
-    Kubernetes는 container의 수를 늘리는 Scale out을 주로 사용  
-    Rollout: component를 순차적으로 업데이트하여 중단 없이 업데이트  
+- Pod와 Replicaset에 대한 "관리"를 제공하는 단위  
+  - 관리: Self-healing, Scaling, Rollout(무중단 업데이트) 등  
+    - Self-healing: container가 잘 작동하는지 ping을 통해 확인  
+    - Scale out: component 수를 늘림(웹 서버)  
+    - Scale up: component 용량을 늘림(데이터베이스)  
+    - Kubernetes는 container의 수를 늘리는 Scale out을 주로 사용  
+    - Rollout: component를 순차적으로 업데이트하여 중단 없이 업데이트  
     
 ### 2. Deployment 생성
 #### Deployment.yaml
