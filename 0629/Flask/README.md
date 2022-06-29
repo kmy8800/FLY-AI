@@ -24,9 +24,10 @@ if __name__ == "__main__":
 	app.run(debug=True, host='0.0.0.0', port=5000)
 # debug 모드로 실행, 모든 IP 에서 접근 허용, 5000 포트로 사용하는 것을 의미
 ```
-http://<IP-ADDRESS>:<PORT>
 
 ```bash
+http://<IP-ADDRESS>:<PORT>
+
 curl -X GET <IP-ADDRESS>:<PORT>
 ```
 
@@ -49,6 +50,14 @@ def hello_AI():
 
 if __name__ == "__main__":
 	app.run(debug=True, host='0.0.0.0', port=5000)
+```
+
+```bash
+http://<IP-ADDRESS>:<PORT>
+http://<IP-ADDRESS>:<PORT>/helloai
+
+curl -X GET <IP-ADDRESS>:<PORT>
+curl -X GET <IP-ADDRESS>:<PORT>/helloai
 ```
 
 ### 4. POST method
