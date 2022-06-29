@@ -105,7 +105,7 @@ git commit -m "update demo.txt"
 
 dvc push
 ```
-
+- 이전 data 버전으로 되돌림
 ```bash
 git log --oneline
 
