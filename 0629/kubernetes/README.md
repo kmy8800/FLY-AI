@@ -13,6 +13,7 @@ Pod와 Replicaset에 대한 "관리"를 제공하는 단위
     Rollout: component를 순차적으로 업데이트하여 중단 없이 업데이트
     
 ### 2. Deployment 생성
+#### Deployment.yaml
 ```bash
 apiVersion: apps/v1 # kubernetes resource 의 API Version
 kind: Deployment # kubernetes resource name
@@ -36,3 +37,15 @@ spec: # 메인 파트 : resource 의 desired state 를 명시
         ports:
         - containerPort: 80 # container 의 내부 Port
 ```
+
+```bash
+kubectl apply -f deployment.yaml
+```
+
+### 3. Deployment 조회
+
+```bash
+kubectl get deployment
+kubectl get deployment,pod
+```
+
