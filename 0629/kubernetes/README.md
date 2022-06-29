@@ -53,4 +53,17 @@ kubectl get deployment,pod
 ```bash
 kubectl delete pod <pod name>
 ```
-pod를 삭제하더라도 replicas 수를 맞추기 위해 pod가 자동으로 복구됨
+- pod를 삭제하더라도 replicas 수를 맞추기 위해 pod가 자동으로 복구됨
+
+### 5. Deployment Scaling
+```bash
+kubectl scale deployment/nginx-deployment --replicas=5
+```
+
+### 6. Deployment Delete
+
+```bash
+kubectl delete deployment <deployment name>
+또는
+kubectl delete -f <yaml file>
+```
