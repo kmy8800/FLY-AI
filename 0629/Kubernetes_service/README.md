@@ -19,6 +19,7 @@ curl: (7) Failed to connect to 172.17.0.5 port 80: No route to host
 ```
 
 - Deployment를 매칭시킨 Service 생성
+#### service.yaml
 ```yaml
 apiVersion: v1
 kind: Service
@@ -34,3 +35,10 @@ spec:
   selector: # 아래 label 을 가진 Pod 을 매핑하는 부분입니다.
     app: nginx 
 ```
+
+```bash
+kubectl apply -f service.yaml
+
+kubectl get service
+```
+
