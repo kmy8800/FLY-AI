@@ -52,7 +52,7 @@ my-nginx     NodePort    10.103.173.199   <none>        80:30994/TCP   35m
 ```bash
 curl GET $(minikube ip):30944
 ```
-####result
+#### result
 ```bash
 <!DOCTYPE html>
 <html>
