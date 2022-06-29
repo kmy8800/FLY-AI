@@ -30,15 +30,30 @@ pip install protobuf==3.20.0   # package종속
 mlflow --version
 # mlflow, version 1.20.2
 ```
-
-Microsoft Azure와 같은 cloud 환경에서 할 경우, 네트워킹 포트(여기선 5000)를 열어야함
+## 2. MLflow ui
+Microsoft Azure와 같은 cloud 환경에서 할 경우, 네트워킹 포트(여기선 5000)를 열어야함  
 Microsoft Azure -> 네트워킹 -> 인바운드 포트 규칙 추가, 아웃바운드 포트규칙 추가
 
 ```bash
 # local 환경
-mlflow ui -p <PORT-NUMBER> # http://localhost:5000 에서 MLflow ui 확인 가능 default port num:5000
+~/mlflow-tutorial$ mlflow ui -p <PORT-NUMBER> # http://localhost:5000 에서 MLflow ui 확인 가능 default port num:5000
 
 # cloud 환경
-mlflow ui -h 0.0.0.0 -p <PORT-NUMBER> # 외부에서 접속 허용
+~/mlflow-tutorial$ mlflow ui -h 0.0.0.0 -p <PORT-NUMBER> # 외부에서 접속 허용
 ```
+mlflow ui 실행시, 해당 디렉토리에 mlruns/0/meta.yaml 파일 생성
 
+## 3. MLflow Example
+
+```bash
+~/mlflow-tutorial$ wget https://raw.githubusercontent.com/mlflow/mlflow/master/examples/sklearn_elasticnet_diabetes/linux/train_diabetes.py
+
+python train_diabetes.py
+python train_diabetes.py  0.01 0.01   # parameter를 바꿔가며 실험
+python train_diabetes.py  0.01 0.75
+python train_diabetes.py  0.01 1.0
+python train_diabetes.py  0.05 1.0
+python train_diabetes.py  0.05 0.01
+python train_diabetes.py  0.5 0.8
+python train_diabetes.py  0.8 1.0
+```
