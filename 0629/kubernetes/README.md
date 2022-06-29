@@ -49,3 +49,8 @@ kubectl get deployment
 kubectl get deployment,pod
 ```
 
+### 4. Deployment Auto-healing
+```bash
+kubectl delete pod <pod name>
+```
+pod를 삭제하더라도 replicas 수를 맞추기 위해 pod가 자동으로 복구됨
