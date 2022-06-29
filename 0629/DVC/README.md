@@ -2,7 +2,7 @@
 
 ## DVC란
 - Data Version Control
-- Amazon S3, Microsoft Azure Blob Storage, Google Drive 등에 데이터를 저장하는 것을 관리
+- Amazon S3, Microsoft Azure Blob Storage, Google Drive 등에 데이터를 저장하는 것을 버전에 따라 관리
 
 ### 1. DVC 설치
 - python 3.8이상 설치
@@ -11,7 +11,7 @@ sudo apt-get install python3.8
 sudo apt-get update
 sudo apt-get upgrade
 
-ls -al /usr/bin/pytho
+ls -al /usr/bin/python
 
 ls /usr/bin/ | grep python
 
