@@ -1,6 +1,7 @@
 # SKT FLY AI
 
-## [DOCKER]
-## [Kubernetes]
-## [MLflow]
-## [Flask]
+[DOCKER]
+[Kubernetes]
+[DVC]
+[MLflow]
+[Flask]
