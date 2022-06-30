@@ -87,7 +87,7 @@ curl -X POST 127.0.0.1:5000/predict
 #### 1) 모델 학습 및 저장
 
 ##### ~/flask-tutorial/train.py
-'''py
+```python
 import os
 import pickle
 
