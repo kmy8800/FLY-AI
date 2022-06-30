@@ -139,7 +139,7 @@ python train.py
 
 #### 2) Flask Server 구현
 
-##### ~/flask-tutorial/flask-server.py
+##### ~/flask-tutorial/flask_server.py
 ```py
 import pickle
 
@@ -183,7 +183,7 @@ if __name__ == '__main__':
 #### 3) API test
 
 ```bash
-python flask-server.py
+python flask_server.py
 ```
 
 ```bash
