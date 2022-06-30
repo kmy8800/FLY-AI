@@ -163,7 +163,7 @@ def make_predict():
     X_test = [request_body['sepal_length'], request_body['sepal_width'],
               request_body['petal_length'], request_body['petal_width']]
     X_test = np.array(X_test)
-    X_test = X_test.reshape(1, -1)
+    X_test = X_test.reshape(1, -1)   #machine learning에 적합한 형태로 reshape
 
     # model 의 predict 함수를 호출하여, prediction 값을 구합니다.
     y_test = model.predict(X_test)
@@ -180,4 +180,15 @@ if __name__ == '__main__':
 ```
 
 
-#### 3) 
+#### 3) API test
+
+```bash
+python flask-server.py
+```
+
+```bash
+curl -X POST -H "Content-Type:application/json" --data '{"sepal_length": 5.9, "sepal_width": 3.0, "petal_length": 5.1, "petal_width": 1.8}' http://localhost:5000/predict
+
+# {"result":[2]}
+# 0, 1, 2  중의 하나의 type 으로 classification 하게 됩니다.
+```
