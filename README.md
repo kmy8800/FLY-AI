@@ -11,7 +11,7 @@
 [MLflow](https://github.com/kmy8800/FLY-AI/tree/main/0629/MLflow)  
 [Flask](https://github.com/kmy8800/FLY-AI/tree/main/0629/Flask)
 
-#### [0701]
+#### [0701](https://github.com/kmy8800/FLY-AI/tree/main/0701)
 
 
 #### [0704]
