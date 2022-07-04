@@ -14,3 +14,12 @@ Virtual Machine 생성
 ```bash
 az vm create -n MyVM -g MyRG --image UbuntuLTs --generate-ssh-keys --location koreacentral
 ```
+
+
+### Azure CLI
+- Azure cloud shell을 windows shell, linux bash에서 사용할 수 있도록함
+- Azure CLI 설치
+
+```bash
+az login
+```
