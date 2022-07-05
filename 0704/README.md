@@ -34,4 +34,17 @@ az login
 ### Azure IaaS
 - 로드밸런스(부하분산기)가 소프트웨어적으로 서버에 가하는 부하를 일정한 규칙(옵션)에 따라 분산시켜줌
 
--IPv4: 32bit, 
+- IPv4: 32bit, 충분하지않다.
+- Public IP, Private IP를 활용한다.
+- Subnet: 네트워크를 논리적으로 묶어 나누는 단위
+- Subnet Mask: 123.123.123.xxx로 IP주소를 부여받으면,
+  - -> Subnet Mask 255.255.255.xxx 로 표기
+- CIDR(Classless Inter-Domain Routing)
+  - IP의 주소의 영역을 여러 네트워크 영역으로 나누기 위해 IP를 묶는 방식  
+  - Subnet Mask와 비슷한 기능
+  - ex) 32bit를 20bit(Network ID) & 12bit(Host ID)로 나누어 표기하여 
+
+- Private IP: 하나의 Public IP를 여러기기가 공유
+
+
+- State-less Architecture: 상태가 없는 구조
