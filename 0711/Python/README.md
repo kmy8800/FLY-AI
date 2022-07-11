@@ -50,4 +50,16 @@
 - list.sort: list changed
 - sorted(list): list not changed
 - list.copy(): 새로운 list를 만들어 값 저장, shallow copy ( b = a\[:]와 동일)
-- 
+
+#### Join
+- a = "Life is too short"
+- wordlist = a.split()
+- -> wordlist = \['Life','is','too','short']
+- __a_sentence = " ".join(wordlist)__
+- -> a_sentence = "Life is too short"
+
+
+### set
+- 중복을 허용하지 않는다.
+- 값을 바꿀 수 없는(immutable) 객체만 원소로 올 수 있다. (정수, 문자열, 튜플 가능)
+- 순서가 없다.(Unordered) -> slicing, indexing 불가능
