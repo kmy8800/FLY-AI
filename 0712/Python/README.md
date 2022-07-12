@@ -38,7 +38,7 @@ lst = [1, 2, 3, 4, 5]
 
 def square(n):
   return n*n
-  
+ 
 lst2 = list(map(square, lst))
 ```
 
@@ -92,15 +92,69 @@ def recursive(n)
   ```py
   class subclass(super class):
     super.__init__(self, value)
-    def \__init__(self, value)
+    def __init__(self, value)
       self.value = value
   ```
   
 ### User Interface Programming
 
-- 
+#### TKinter
+- window, box, button 등 모든 것이 widget(object)
+```py
+import tkinter as tk
+
+root = tk.Tk()  # 생성자, top-level-window 생성
+
+w = tk.Label(root, text="Hello Tkinter!")
+w.pack()
+
+root.mainloop()
+```
+
+- label
+- button: Click event handler
+- checkbox: true(1) false(0)
+- entry: text input
+- canvas: drawing
+- sliders
+- text widgets
+
+
+### Flask
+- WSGI(Web Server Gateway Interface: 웹 서버와 웹 어플리케이션 사의 범용 인터페이스를 위한 규격
+- Jinja2: python 템플릿 엔진
+
+#### 
+```py
+app = Flask(__name__)  # Flask instance 생성
+
+@app.route('/)  # route(): decorator는 URL을 함수에 바인딩하는 데 사용
+def hello_world():
+  return 'Hello World'
+
+def index():
+  return render_template('... .html')  # templates folder 내의 .html 파일을 렌더링
+
+if __name__ == '__main__':
+  app.run()            # app.run을 통해 Flask 어플리케이션 실행
   
-  
+```
 
+#### Sending Form
+```py
+from flask import Flask, render_template, request
+app = Flask(__name__)
 
+@app.route('/')
+def student():
+   return render_template('student.html')
 
+@app.route('/result',methods = ['POST', 'GET'])
+def result():
+   if request.method == 'POST':
+      result = request.form
+      return render_template("result.html",result = result)
+
+if __name__ == '__main__':
+   app.run(debug = True)
+```
