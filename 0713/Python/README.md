@@ -39,7 +39,7 @@ pipenv install pytest --dev  / 운영이 아닌 개발에만 적용되도록 지
 
 ### PyInstaller
 - Distributing Python Application
-- https://sdldocs.github.io/pyinstaller
+- https://sdldocs.gitlab.io/pyinstaller
                    
 ```bash
    pip install pyinstaller
@@ -47,4 +47,4 @@ pipenv install pytest --dev  / 운영이 아닌 개발에만 적용되도록 지
    pyinstall cli.py
 ```
 ### Python Packaging
-- https://sdldocs.github.io/python-packaging
+- https://sdldocs.gitlab.io/python-packaging
