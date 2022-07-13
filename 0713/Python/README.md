@@ -34,7 +34,7 @@ pip install pipenv
 ```bash
 pipenv install numpy
 pipenv install flask==0.12.1
-pipenv install pytest --dev  // 운영이 아닌 개발에만 적용되도록 지정
+pipenv install pytest --dev  / 운영이 아닌 개발에만 적용되도록 지정
 ```
 
 ### PyInstaller
@@ -42,7 +42,7 @@ pipenv install pytest --dev  // 운영이 아닌 개발에만 적용되도록 �
 - https://sdldocs.github.io/pyinstaller
                    
 ```bash
-   pip install pyinstaller                
+   pip install pyinstaller
+                   
+   pyinstall cli.py
 ```
-                   
-                   
