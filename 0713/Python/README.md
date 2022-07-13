@@ -45,3 +45,4 @@ pipenv install pytest --dev  / 운영이 아닌 개발에만 적용되도록 지
    pip install pyinstaller
                    
    pyinstall cli.py
+```
