@@ -46,3 +46,5 @@ pipenv install pytest --dev  / 운영이 아닌 개발에만 적용되도록 지
                    
    pyinstall cli.py
 ```
+### Python Packaging
+- https://sdldocs.github.io/python-packaging
