@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Profile</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#00BCD4">
+
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar clearfix">
+        <h1 class="logo"><a href="/">Profile</a></h1>
+        <ul class="nav">
+            <li><a>SKT-FLYAI</a></li>
+            <li><a>AIZO</a></li>
+        </ul>
+    </nav>
+
+    <main class="about-content">
+
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="box-center">
+                        <form action="/add" method="post">
+                            <div>
+                                <div>
+                                    <input type="hidden" name="user_id" value='{{ user_id }}' >
+                                </div>
+                                <label for="text-date">Date</label>
+                                <div>
+                                    <input type="text" name="date" placeholder="July.2022 - present" id="text-date" required>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="text-description">Description</label>
+                                <div>
+                                    <input type="text" name="description" placeholder="프로젝트 설명" id="text-description" required>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="text-link">Link</label>
+                                <div>
+                                    <input type="text" name="link" placeholder="프로젝트 링크" id="text-link" required>
+                                </div>
+                            </div>
+                            <input class="btn-write" type="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</html>
