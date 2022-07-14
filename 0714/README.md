@@ -53,4 +53,9 @@ y[0] = -1  # y = [-1, 1]
 
 np.getfromtxt('./Iris.txt', delimeter=',', skip_header=True)
 
+np.savez('data.npz', x=x, y=y)
+
+data = np.load('data.npz')
+x = data['x']
+y = data['y']
 ```
