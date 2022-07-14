@@ -10,4 +10,5 @@ pip install ipykernel
 
 python -m ipykernel install --ueser --name myml --display-name "myml"
 
+jupyther lab
 ```
