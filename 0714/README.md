@@ -8,7 +8,7 @@ conda activate myml
 
 pip install ipykernel
 
-python -m ipykernel install --ueser --name myml --display-name "myml"
+python -m ipykernel install --user --name myml --display-name "myml"
 
 jupyther lab
 ```
