@@ -47,3 +47,18 @@
 - mse
 - 결정계수 R2(R square): 독립 변수가 종속변수를 얼마나 설명하고 있는지 나타내는 지표
 - R2값이 0.3이라면, 독립변수가 종속변수의 30%를 설명한다.
+
+
+## K-Nearest Neighbor(KNN)
+- K개의 가장 가까운 유사도를 가진 기존 데이터에 따라 분류
+
+
+### Distance
+- Euclidean: 공간 상에서 두 점 사이의 거리 sqrt(x^2 + y^2)
+- Manhattan Distance: 격자에서의 두 점 사이의 거리
+
+- y가 연속형인 경우(Regression): 가장 가까이에 있는 데이터의 평균으로 새로운 데이터를 예측
+- KNN-Hyperparameter: k, 최근접 이웃을 몇 개로 설정할 것인가.
+- K=1: over-fitting
+- K값이 커질수록 결정경계가 완만해지지만 과소적합이 발생할 수 있다.
+- 일정 범위 내에서 k를 변경해가며, 가장 좋은 예측 결과를 보이는 k를 선정(Validation Error가 최소값을 갖는 k, Grid Search)
