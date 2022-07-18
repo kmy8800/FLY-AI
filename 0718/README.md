@@ -62,3 +62,19 @@
 - K=1: over-fitting
 - K값이 커질수록 결정경계가 완만해지지만 과소적합이 발생할 수 있다.
 - 일정 범위 내에서 k를 변경해가며, 가장 좋은 예측 결과를 보이는 k를 선정(Validation Error가 최소값을 갖는 k, Grid Search)
+
+## Support Vector Machine(SVD)
+- 선형, 비선형 판별 가능
+- 복잡한 분류 문제에 적합
+- 가장 전방에 있는 두 평행선찾아 거리(margin)가 최대가 되는 분류 경계선 찾음
+- Soft Margin Classification: 에러(threshold는 설정해야함)를 고려한 SVD
+- 다변량(다차원)은 결정경계가 면(Hyperplan)이 된다.
+- 비선형 SVM: 커널트릭(kernel trick)
+  - 커널을 통해 차원을 바꾸어 분류
+  - 원래의 차원에서는 비선형분류
+- Params
+  - C: 클수록 hard margin, 에러를 인정하지않음
+  - kernel: rbf(가우시안 커널), linear, poly, sigmoid, ...
+  - degree: 다항식 커널의 차수 결정
+  - gamma: 클수록 면이 구불거림, overfitting 가능성 증가
+  - coef: 상수항
