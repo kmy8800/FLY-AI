@@ -19,3 +19,13 @@ Min_sample_split: 분기를 하기위한 최소한의 샘플수
     
     
   
+# Naive Bayes Classifier
+## 조건부 확률
+- P(A|B): B사건이 발생했을 때, A사건이 발생할 확률 P(AnB) / P(B)
+
+## Bayes Theorem
+- P(A|B) = P(B|A) * P(A) / P(B)
+
+## Naive Bayes
+- 각 사건이 일어날 확률이 독립적이라고 가정
+- 
