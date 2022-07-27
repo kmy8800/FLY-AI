@@ -55,4 +55,20 @@
   - L1 Norm: Lasso Regularization
   - L2 Norm: Ridge Regularization
 
-  
+## Logistic Regression
+- 분류 알고리즘
+
+### Binary Classification
+- 예측 값의 로지스틱 값(0~1)으로 분류
+- sigmoid function : 1 / (1 + e^(-z))
+- Cost Function
+  - 정답과 예측값의 차이(에러)에 비례에서 값을 반환
+  - Binary Cross Entropy: Loss function = ylog(y_pred) + (1-y)log(1-y_pred)
+  - 
+
+### Multi-class Classification
+- 여러 개의 이진 분류의 결과를 확률로 해석
+- A일 확률, B일 확률, C일 확률의 합을 1로 만듦
+- Softmax: e^x / sum(e^x)
+- Cost Function
+  - Categorical Cross Entropy: sum(ylog(y_pred))
